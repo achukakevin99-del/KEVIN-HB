@@ -1,0 +1,132 @@
+```css
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+    background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #232526, #414345);
+    background-size:400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color:white;
+}
+
+/* Animated Background */
+@keyframes gradientBG{
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+/* Navbar */
+.navbar{
+    padding:15px 0;
+}
+
+.nav-link{
+    color:white !important;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+    transform:translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section{
+    min-height:100vh;
+    padding-top:100px;
+}
+
+.profile-image{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #ffc107;
+    transition:0.5s;
+}
+
+.profile-image:hover{
+    transform:scale(1.05);
+}
+
+/* Section Title */
+.section-title{
+    font-weight:700;
+    color:#ffc107;
+}
+
+/* Cards */
+.custom-card{
+    background:rgba(255,255,255,0.08);
+    border:none;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
+    color:white;
+}
+
+.custom-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* Buttons */
+.btn-warning{
+    border-radius:30px;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.btn-warning:hover{
+    transform:translateY(-3px);
+}
+
+/* Social Icons */
+.social-icons a{
+    color:#ffc107;
+    font-size:28px;
+    margin:0 10px;
+    transition:0.4s;
+}
+
+.social-icons a:hover{
+    color:white;
+    transform:scale(1.2);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .profile-image{
+        width:250px;
+        height:250px;
+    }
+
+    .hero-section{
+        text-align:center;
+    }
+
+    .display-4{
+        font-size:2.5rem;
+    }
+}
+```
